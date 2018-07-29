@@ -6,7 +6,7 @@ mongoose.Promise = global.Promise;
 const url = 'mongodb://localhost:27017/';
 // Database Name
 const dbName = 'TodoApp';
-mongoose.connect(url+dbName,{ useNewUrlParser: true }, (err,client) => {
+mongoose.connect(process.env.MONGODB_URI || url+dbName,{ useNewUrlParser: true }, (err,client) => {
 	if(err){
 		return console.log('Unable to connect MongoDB Server');
 	}
