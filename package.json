@@ -12,10 +12,12 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
     "lodash": "^4.17.10",
     "mongodb": "^3.1.1",
     "mongoose": "^5.2.4",
     "mysql": "^2.15.0",
-    "nodemon": "^1.18.3"
+    "nodemon": "^1.18.3",
+    "validator": "^10.5.0"
   }
 }
