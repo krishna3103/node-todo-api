@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var Todo = mongoose.model('todos', {
-	list : {
+	text : {
 		type : String,
 		require : true,
 		trim : true,
@@ -14,6 +14,10 @@ var Todo = mongoose.model('todos', {
 	completedAt : {
 		type : Number,
 		default : null
+	},
+	_creator: {
+		type: mongoose.Schema.Types.ObjectId,
+		require: true
 	}
 });
 
